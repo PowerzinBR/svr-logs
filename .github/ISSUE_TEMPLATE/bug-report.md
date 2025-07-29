@@ -3,7 +3,7 @@ name: Bug Report
 about: Create a report to help us improve
 title: 'app:error | '
 labels: bug
-assignees: PowerzinBR, PowerrDev
+assignees: PowerrDev, PowerzinBR
 
 ---
 
