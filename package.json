@@ -1,7 +1,43 @@
 {
   "name": "@svr-app/logs",
+  "version": "1.0.0",
+  "description": "A flexible typescript logging library built specifically for my app and other Node.js applications. Created using Typescript and no other dependency.",
   "module": "index.ts",
   "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PowerzinBR/svr-logs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PowerzinBR/svr-logs/issues"
+  },
+  "scripts": {
+    "build": "bun build src/index.ts --outdir dist --target node --format esm && bun run build:types",
+    "build:types": "tsc --emitDeclarationOnly --outDir dist",
+    "dev": "bun run src/example.ts",
+    "test": "bun test",
+    "prepublishOnly": "bun run build"
+  },
+  "keywords": [
+    "logging",
+    "logger",
+    "typescript",
+    "colors",
+    "levels"
+  ],
+  "files": [
+    "dist/"
+  ],
+  "author": "Taviox",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },

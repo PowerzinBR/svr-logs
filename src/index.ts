@@ -5,7 +5,7 @@ export { Logger } from './logger.js';
 export { LOG_LEVELS, COLORS } from './constants.js';
 export { LogFormatter } from './formatter.js';
 
-import type { LoggerConfig } from '../types.js';
+import type { LoggerConfig } from './types.js';
 import { Logger } from './logger.js';
 
 export const logger = new Logger();
