@@ -28,7 +28,18 @@
     "levels"
   ],
   "files": [
-    "dist/"
+    "dist/index.js",
+    "dist/index.d.ts",
+    "dist/index.d.ts.map",
+    "dist/types.d.ts",
+    "dist/types.d.ts.map",
+    "dist/constants.d.ts",
+    "dist/constants.d.ts.map",
+    "dist/formatter.d.ts",
+    "dist/formatter.d.ts.map",
+    "dist/logger.d.ts",
+    "dist/logger.d.ts.map",
+    "README.md"
   ],
   "author": "Taviox",
   "license": "MIT",

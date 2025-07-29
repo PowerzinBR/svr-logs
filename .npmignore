@@ -1,0 +1,31 @@
+# Source files
+src/
+*.ts
+!dist/**/*.d.ts
+
+# Development files
+.git/
+.gitignore
+tsconfig.json
+bun.lockb
+node_modules/
+
+src/example.ts
+*.test.ts
+*.spec.ts
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
