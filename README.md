@@ -1,4 +1,4 @@
-# @svr-app/logs
+# @taviox/logs
 
 **A flexible typescript logging library built specifically for my app and other Node.js applications**. Created using Typescript and **no** other dependency.
 
@@ -12,13 +12,13 @@
 
 ### Installation
 ```
-bun add @svr-app/logs
+bun add @taviox/logs
 ```
 
 ### Usage
 
 ```ts
-import { info, error, warn, debug } from "@svr-app/logs";
+import { info, error, warn, debug } from "@taviox/logs";
 
 info("database seeded!");
 error("error while fetching products.");
@@ -37,10 +37,10 @@ app:debug debug info
 
 #### Customizing Logs
 
-To change things like the prefix (app:), or the logs level, use the function **createLogger** from `@svr-app/logs`:
+To change things like the prefix (app:), or the logs level, use the function **createLogger** from `@taviox/logs`:
 
 ```ts
-import { createLogger } from '@svr-app/logs';
+import { createLogger } from '@taviox/logs';
 
 const logger = createLogger({
   prefix: 'api',
@@ -58,7 +58,7 @@ logger.error('Request failed');
 If you opt for creating a hierarchical logging structure, follow the example below:
 
 ```ts
-import { createLogger } from '@svr-app/logs';
+import { createLogger } from '@taviox/logs';
 
 const appLogger = createLogger({ prefix: 'app' });
 const dbLogger = appLogger.child('database');
