@@ -1,4 +1,4 @@
-import type { LogLevel, LogLevelConfig } from '../types';
+import type { LogLevel, LogLevelConfig } from './types.js';
 
 export const LOG_LEVELS: Record<LogLevel, LogLevelConfig> = {
   debug: { priority: 0, color: '\x1b[36m', method: 'log' },     // Cyan
