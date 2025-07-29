@@ -1,6 +1,6 @@
 {
   "name": "@taviox/logs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A flexible typescript logging library built specifically for my app and other Node.js applications. Created using Typescript and no other dependency.",
   "module": "index.ts",
   "type": "module",
